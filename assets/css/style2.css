@@ -1,17 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Oswald');
+@import url("https://fonts.googleapis.com/css?family=Bungee+Inline|Oswald");
 /* 
     Add a CSS ruleset to accomplish the following:
     - Use the 'Oswald' font family at 14px throughout the body of the document.
 */
 
+body {
+  font-family: Oswald;
+  font-size: 14px;
+}
+
 nav {
-    font-family: sans-serif;
-    font-size: 10px;
+  font-family: sans-serif;
+  font-size: 10px;
 }
 
 #main {
-    width: 900px;
-    margin: 10px auto;
+  width: 900px;
+  margin: 10px auto;
 }
 
 /* 
@@ -21,18 +26,25 @@ nav {
         - use a lighter weight font
 */
 
+h1 {
+  font-family: "Bungee Inline";
+  font-size: 46px;
+  font-weight: lighter;
+}
+
 #menu {
-    columns: 420px 2;
-    column-gap: 60px;
+  columns: 420px 2;
+  column-gap: 60px;
 }
 
 section {
-    margin-bottom: 20px;
-    padding: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 h2 {
-    margin-top: 0;
+  margin-top: 0;
+  text-transform: uppercase;
 }
 
 /* 
@@ -47,7 +59,7 @@ h2 {
 */
 
 dt {
-    display: inline;
+  display: inline;
 }
 
 /* 
@@ -55,21 +67,25 @@ dt {
     - Make a comma appear after the name of each menu item
 */
 
+dt::after {
+  content: ",";
+}
+
 dd {
-    display: inline;
-    margin: 0;
+  display: inline;
+  margin: 0;
 }
 
 dd::after {
-    content: " ";
-    display: block;
-    clear: both;
-    margin-bottom: 15px;
+  content: " ";
+  display: block;
+  clear: both;
+  margin-bottom: 15px;
 }
 
 .price {
-    float: right;
-    padding: 0 0 35px 20px;
+  float: right;
+  padding: 0 0 35px 20px;
 }
 
 /* 
@@ -77,7 +93,19 @@ dd::after {
     - right align the text in the footer
 */
 
+footer {
+  text-align: right;
+}
+
 /* 
     Add a CSS ruleset targeting the starters and desserts sections to accomplish the following:
     - draw a 2px black border around the sections
 */
+
+#starters {
+  border: 2px solid black;
+}
+
+#desserts {
+  border: 2px solid black;
+}
